@@ -1,6 +1,6 @@
 
 import React from "react";
-import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+import { SidebarProvider, SidebarTrigger, useSidebar } from "@/components/ui/sidebar";
 import AppSidebar from "./AppSidebar";
 
 interface MainLayoutProps {
@@ -11,7 +11,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   return (
     <SidebarProvider>
       <div className="min-h-screen flex flex-col w-full botanical-bg-pattern">
-        <header className="w-full bg-botanical-green-dark py-3 px-6 text-botanical-cream border-b border-botanical-gold/30">
+        <header className="w-full bg-botanical-green-dark py-3 px-6 text-botanical-cream border-b border-botanical-gold/30 z-20 relative">
           <div className="container mx-auto flex items-center">
             <img 
               src="/lovable-uploads/b93ff3ec-070f-45b6-b90d-5ca4d1ccbabf.png" 
