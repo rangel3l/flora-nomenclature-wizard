@@ -11,6 +11,19 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   return (
     <SidebarProvider>
       <div className="min-h-screen flex flex-col w-full botanical-bg-pattern">
+        <header className="w-full bg-botanical-green-dark py-3 px-6 text-botanical-cream border-b border-botanical-gold/30">
+          <div className="container mx-auto flex items-center">
+            <img 
+              src="/lovable-uploads/b93ff3ec-070f-45b6-b90d-5ca4d1ccbabf.png" 
+              alt="T4M2 Logo" 
+              className="h-12 mr-3" 
+            />
+            <div className="text-left">
+              <p className="text-lg font-bold">Flora Nomenclature Wizard</p>
+              <p className="text-sm">Taxonomia Botânica</p>
+            </div>
+          </div>
+        </header>
         <div className="flex flex-1">
           <AppSidebar />
           <main className="flex-1 p-4 md:p-6 overflow-auto">
